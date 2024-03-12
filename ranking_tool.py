@@ -4,8 +4,7 @@ def initialize_rankings(names):
     rankings = {name: 0 for name in names}
     return rankings
 
-def compare_names_in_grou
-]p(group_names, rankings):
+def compare_names_in_group(group_names, rankings):
     random.shuffle(group_names)
     for i in range(len(group_names)):
         name1 = group_names[i]
@@ -36,7 +35,7 @@ if __name__ == "__main__":
     else:
         # Create groups from the list of names
         groups = [
-    names[0:10], names[10:20], names[20:30], names[30:40], names[40:50], 
+    names[0:10], names[10:20], names[20:30], names[30:40], names[40:50],
     names[50:60], names[60:70], names[70:80], names[80:90], names[90:100], names[100:]
 ]
 
@@ -73,4 +72,4 @@ for sorted_names in sorted_names_in_groups.values():
 # Print the combined sorted list
 print("Combined rankings for all groups (inverted rankings):")
 for i, name in enumerate(combined_sorted_names, start=1):
-    print(f"{i}. {name}")
+    print(f"{name}")
